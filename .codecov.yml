@@ -31,7 +31,3 @@ comment: # enable code coverage comment on PR
   require_base: false
   require_head: true
   hide_project_coverage: true
-
-ignore:
-  - "versioneer.py"
-  - "monai/_version.py"
