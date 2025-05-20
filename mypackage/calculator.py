@@ -16,7 +16,7 @@ def multiply(a, b):
 
 def divide(a, b):
     """Divide a by b and return the result.
-    
+
     Raises:
         ZeroDivisionError: If b is 0
     """
@@ -31,3 +31,7 @@ def square(a):
 def cube(a):
     """Return the cube of a number."""
     return a * a * a
+
+def power(a, b):
+    """Return a raised to the power of b."""
+    return a ** b
