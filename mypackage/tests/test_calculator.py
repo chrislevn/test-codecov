@@ -2,7 +2,7 @@
 Tests for the calculator module
 """
 import pytest
-from mypackage.calculator import add, subtract, multiply, divide, square, cube
+from mypackage.calculator import add, subtract, multiply, divide, square, cube, power
 
 def test_add():
     assert add(1, 2) == 3
@@ -23,9 +23,15 @@ def test_divide():
     assert divide(6, 3) == 2
     assert divide(5, 2) == 2.5
     assert divide(-6, 3) == -2
-    
+
     with pytest.raises(ZeroDivisionError):
         divide(5, 0)
 
 # Note: We're intentionally not testing square and cube functions
 # to demonstrate partial code coverage
+
+def test_power():
+    assert power(2, 3) == 8
+    assert power(3, 2) == 9
+    assert power(5, 0) == 1
+    assert power(0, 5) == 0
